@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* styles.css */
+body {
+  background-color: #1e1e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+.year-flip {
+  display: inline-flex;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.digit {
+  background: #333;
+  padding: 0.5rem 1rem;
+  margin: 0 0.1rem;
+  border-radius: 5px;
+}
+
+.digit.flip {
+  background: #3cb043;
+  animation: flip 1.5s ease-in-out infinite;
+}
+
+@keyframes flip {
+  0%, 100% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+}
+
+.message {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.message .highlight {
+  color: #3cb043;
+  font-weight: bold;
+}
+
+.decorations {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #3cb043;
+  border-radius: 50%;
+  position: absolute;
+  animation: float 2s infinite;
+}
+
+.dot.dot1 {
+  top: -20px;
+  left: -50px;
+  animation-delay: 0.2s;
+}
+
+.dot.dot2 {
+  top: 20px;
+  left: 50px;
+  background: #c32bad;
+  animation-delay: 0.4s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-95px);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year 2025</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="year-flip">
+      <span class="digit">2</span>
+      <span class="digit">0</span>
+      <span class="digit">2</span>
+      <span class="digit flip">5</span>
+    </div>
+    <div class="message">
+      <p>Happy New Year <span class="highlight">2025</span></p>
+    </div>
+    <div class="decorations">
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+    </div>
+  </div>
+  
+</body>
+</html>
+
+</body>
+</html>
